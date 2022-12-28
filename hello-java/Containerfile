@@ -19,8 +19,6 @@ COPY  run-app.sh /opt/app-root/bin/
 
 RUN   chown -R 0 /opt/app-root && \
       chmod -R 700 /opt/app-root
-RUN  chown -R  0 /opt/app-root/bin/run-app.sh && \
-     chmod -R 644 /opt/app-root/bin/run-app
 
 EXPOSE 8080
 
